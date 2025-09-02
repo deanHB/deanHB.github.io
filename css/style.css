@@ -1,0 +1,476 @@
+/* style.css 檔案內容 */
+
+/*Font*/
+@font-face {
+          font-family: 'PostNoBillsJaffnaExtraBold'; /* 你自定义的字体名称 */
+          src: url('../font/PostNoBillsJaffna-ExtraBold.ttf') format('truetype'); /* TTF文件的相对路径 */
+}
+
+/*Line*/
+.line-out{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right:30px;
+    top: 80%;
+    background-color:#45B873;
+    border-radius: 100px;
+}
+.line-out:hover{
+   width: 320px;
+   transition: all 0.5s;
+}
+.line-out:hover .line-text-out{
+   display: inline-block;
+   transition:all 0.3;
+}
+
+.line-out > img{
+    width: 90px;
+   float: right;
+}
+
+.line-text-out{
+    width:auto;
+    height: auto;
+    float: left;
+    display: none;
+    padding: 5px 0px 5px 40px;
+}
+
+
+.line-name{
+    width:100%;
+    height: auto;
+    color:#fff;
+}
+.line-text{
+    width:100%;
+    height: auto;
+    color:#fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/*header*/
+.header-out{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    z-index:9999;
+}
+
+.header-out > div{
+    width:1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.header-logo{
+    max-width:262.64px;
+    height:auto;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.header-menu{
+    float: right;
+    padding:15px;
+}
+.header-menu:hover{
+    color: #333;
+}
+
+
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top:130px;
+}
+
+.swiper-pagination.color{
+    margin-top: -10px;
+    position: relative;
+}
+:root{
+    --swiper-theme-color:#F6BDC0!important;
+}
+
+/*區塊內文*/
+.gray-bg{
+    background-color:#FBFBFB;
+}
+
+     /*理念*/
+.text-block{
+    width: 40%;
+    height:auto;
+    float: left;
+}
+.pic-block{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.tittle-sigh-block{
+    width:100%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px;
+
+}
+.title-sign-bg{
+    width: auto;
+    height:20px;
+    float: left;
+    padding:10px 15px;
+    background:linear-gradient(90deg, #CEB8D7 0%, #F5BDC1 100%) no-repeat;
+    border-radius: 50px;
+}
+.title-sign-bg > .circle{
+    width:14px;
+    height: 14px;
+    float:left;
+    border-radius:50px;
+    background-color:#fff;
+    margin:3px 10px 3px 0px;
+}
+.title-sign-bg > .text{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    float: left;
+    color: #FFF;
+}
+.main-text{
+    width: 100%;
+    height: auto;
+    float: left;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+}
+.main-slogon{
+    width: 100%;
+    height: auto;
+    float: right;
+    font-family: 'PostNoBillsJaffnaExtraBold';
+    font-weight: 800;
+    font-size: 250px;
+    letter-spacing: 0.01em;
+    -webkit-text-stroke: 1px #999;
+    text-stroke: 1px #999;
+    color: transparent;
+    line-height: 210px;
+    overflow: hidden;
+    text-align: right;
+    
+}
+.main-slogon.gray{
+    -webkit-text-stroke: 1px #666;
+    text-stroke: 1px #666;
+    
+}
+.main-pic{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -100px;
+}
+
+
+    /*項目*/
+.main-item-block{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -100px;
+}
+.main-item{
+    width:95%;
+    height: auto;
+    float: right;
+}
+.main-item>a{
+    width:48%;
+    height: 115px;
+    float: left;
+    margin-bottom:2%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.main-item>a:nth-child(odd){
+    margin-right:2%;
+}
+.main-item>a:nth-child(1){
+    background-image:url("../img/index_item_01.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(1):hover{
+    background-image:url("../img/index_item_01_hover.png"); 
+}
+.main-item>a:nth-child(2){
+    background-image:url("../img/index_item_02.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(2):hover{
+    background-image:url("../img/index_item_02_hover.png"); 
+}
+.main-item>a:nth-child(3){
+    background-image:url("../img/index_item_03.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(3):hover{
+    background-image:url("../img/index_item_03_hover.png"); 
+}
+.main-item>a:nth-child(4){
+    background-image:url("../img/index_item_04.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(4):hover{
+    background-image:url("../img/index_item_04_hover.png"); 
+}
+.main-item>a:nth-child(5){
+    background-image:url("../img/index_item_05.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(5):hover{
+    background-image:url("../img/index_item_05_hover.png"); 
+}
+.main-item>a:nth-child(6){
+    background-image:url("../img/index_item_06.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(6):hover{
+    background-image:url("../img/index_item_06_hover.png"); 
+}
+
+
+     /*外泌體*/
+.main-exo-bg{
+    background-image:url("../img/index_exosome_bg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main-exo-block{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -100px;
+}
+.main-exo-block>.woman{
+    width: 70%;
+    float:right;
+    margin-top: -50px;
+}
+.main-exo-block>.set{
+    width: 496px;
+    position:absolute;
+    margin-top:210px;
+    margin-left:-180px;
+
+}
+
+    /*證照*/
+.main-pic.cert{
+    width:720px;
+    height: 431px;
+    overflow:hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.cert-list{
+    left: 0px;
+    display:flex;
+    position: absolute;
+}
+.cert-pic{
+    width:223px;
+    height: 431px;
+    margin-right:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+    /*回饋*/
+.main-feedback-block{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -200px;
+}
+.main-feedback-block>.woman{
+    width: 70%;
+    float:right;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+.main-feedback-block>.phone{
+    width: 672px;
+    height: 406px;
+    position:absolute;
+    margin-top:205px;
+    margin-left:-180px;
+    background-image:url('../img/index_feedback_phone.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.main-feedback-case-block{
+    width: 543px;
+    height: 246px;
+    display:block;
+    margin: 160px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.main-feedback-block>.phone .case{
+    width: 100%;
+    height: auto;
+    float:left;
+    margin-bottom:20px;
+    animation: verticalScroll 10s infinite linear; /* 設定動畫名稱、時長、重複次數、速度曲線 */
+}
+
+@keyframes verticalScroll {
+      0% {
+        transform: translateY(0); /* 起始位置 */
+      }
+      100% {
+        transform: translateY(-1000%); /* 結束位置，移動到內容的頂部 */
+      }
+    }
+
+    /*血庫*/
+.main-bloodbanks-map{
+    width:135%;
+    height: auto;
+    float: right;
+    margin-top:-20px;
+}
+
+/*Footer*/
+.footer{
+    margin-top:100px;
+}
+.footer-cert{
+    max-width:735px;
+    height: auto;
+    display: block;
+    margin:0 auto;
+}
+.footer-social{
+    width:100%;
+    height:auto;
+    display: block;
+    margin-top:20px;
+    background-color:#F8F8F8;
+}
+.footer-social-main{
+    width:234px;
+    height:46px;
+    display:block;
+    margin:0 auto;
+    padding:10px 0;
+}
+
+.footer-social a{
+    width: 46px;
+    height: 46px;
+    display:inline-block;
+    margin-right:10px;
+}
+.footer-social a:nth-child(1){
+    background-image: url('../img/footer_fb.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.footer-social a:nth-child(1):hover{
+    background-image: url('../img/footer_fb_hover.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.footer-social a:nth-child(2){
+    background-image: url('../img/footer_ig.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.footer-social a:nth-child(2):hover{
+    background-image: url('../img/footer_ig_hover.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.footer-social a:nth-child(3){
+    background-image: url('../img/footer_yt.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.footer-social a:nth-child(3):hover{
+    background-image: url('../img/footer_yt_hover.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.footer-social a:nth-child(4){
+    background-image: url('../img/footer_line.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.footer-social a:nth-child(4):hover{
+    background-image: url('../img/footer_line_hover.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+
+
+.footer-social a:nth-last-child(1){
+    margin-right:0px;
+}
+.footer-copy-right{
+    width: auto;
+    height:auto;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}

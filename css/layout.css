@@ -1,0 +1,42 @@
+/* layout.css 檔案內容 */
+body{
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 18px;
+    font-family:sans-serif;
+    color: #666666;
+}
+a{
+    font-size: 18px;
+    font-family:sans-serif;
+    color: #666666;
+    text-decoration: none;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.out{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.block{
+    width:1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.out.main-block-set{
+    margin-top:60px;
+}
+.block.main-block-set{
+    padding:40px 0;
+}
+
+
