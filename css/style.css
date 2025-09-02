@@ -352,7 +352,7 @@
     height: auto;
     float:left;
     margin-bottom:20px;
-    animation: verticalScroll 10s infinite linear; /* 設定動畫名稱、時長、重複次數、速度曲線 */
+    animation: verticalScroll 20s infinite linear; /* 設定動畫名稱、時長、重複次數、速度曲線 */
 }
 
 @keyframes verticalScroll {
