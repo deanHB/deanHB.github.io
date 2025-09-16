@@ -1,0 +1,136 @@
+/* about-us.css 檔案內容 */
+
+/*contact banner*/
+.sub-banner{
+    padding-top:100px;
+}
+.contact-input-block{
+    width:calc(100% - 650px);
+    height:auto;
+    float:right;
+    position: relative;
+    margin-top:-400px;
+    margin-right:80px;
+}
+.contact-input-block>input{
+    width:auto;
+    height: auto;
+    min-height:45px;
+    border-radius:15px;
+    background-color:white;
+    border:none;
+    padding: 0 10px;
+    float:left;
+    color:#999;
+    font-size:16px;
+    margin:0 20px 20px 0;
+}
+.contact-input-block>input:nth-child(1){
+    
+}
+.contact-input-block>select.item-drop{
+    height: auto;
+    min-height:45px;
+    border-radius:15px;
+    background-color:white;
+    border:none;
+    padding: 0 10px;
+    float:left;
+    color:#999;
+    font-size:16px;
+    margin:0 0 20px 0;
+    min-width:53%;
+    cursor:default;
+}
+.contact-input-block>input.email{
+    min-width:44%;
+}
+.contact-input-block>div.phone-block{
+    width:40%;
+    margin:0 20px 20px 0;
+    float: left;
+}
+.contact-input-block>div.phone-block>input{
+    border-radius:0 15px 15px 0;
+    width:calc(100% - 100px);
+    min-height:45px;
+    background-color:white;
+    border:none;
+    padding: 0 10px;
+    float:left;
+    color:#999;
+    font-size:16px;
+}
+
+.country-number{
+    width: 60px!important;
+    height: auto;
+    background-color:white;
+    float:left;
+    border-radius:15px 0 0 15px!important;
+    cursor:default;
+}
+.contact-input-block>textarea.question-block{
+    width:calc(100% - 65px);
+    height:150px;
+    float:left;
+    text-align: left;
+    border-radius:15px;
+    background-color:white;
+    border:none;
+    padding: 0 10px;
+    float:left;
+    color:#999;
+    font-size:16px;
+    padding:10px;
+}
+.contact-input-submit-block{
+    width:calc(100% - 65px);
+    height:auto;
+    float:left;
+    margin-top:20px;
+}
+.contact-input-submit-block>button{
+    display: block;
+    margin:0 auto;
+    width:136px;
+    height:43px;
+    font-size:18px;
+    border:1px solid white;
+    color:white;
+    border-radius:100px;
+    background:url(../img/more_btn_bg.png) no-repeat;
+    background-size:cover;
+    cursor: pointer;
+
+}
+.contact-input-submit-block>button:hover{
+    background:url(../img/more_btn_hover_bg.png) no-repeat;
+    transition:all 0.3s;
+    background-size:cover;
+
+}
+.google-map{
+    width:100%;
+    height:300px;
+    border:0px;
+    border-radius:60px;
+    float:left;
+    margin-top:80px;
+}
+.company-info-block{
+    width:80%;
+    height: auto;
+    float:left;
+    margin:40px 10% 0 10%;
+}
+.company-info-logo-block{
+    width:484px;
+    height:auto;
+    float:left;
+}
+.company-info-main-block{
+    width:449px;
+    height:auto;
+    float:right;
+}

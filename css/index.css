@@ -1,0 +1,314 @@
+/* style.css 檔案內容 */
+
+
+/*Popup*/
+.popup-block{
+    width:100%;
+    height: 100vh;
+    float:left;
+    z-index: 99999;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0px; 
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.popup-block>iframe{
+    width:100%;
+    height: 100%;
+
+}
+
+
+
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top:130px;
+}
+
+.swiper-pagination.color{
+    margin-top: -10px;
+    position: relative;
+}
+:root{
+    --swiper-theme-color:#F6BDC0!important;
+}
+
+/*區塊內文*/
+.gray-bg{
+    background-color:#FBFBFB;
+}
+
+     /*理念*/
+.text-block{
+    width: 40%;
+    height:auto;
+    float: left;
+}
+.pic-block{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.tittle-sigh-block{
+    width:100%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px;
+
+}
+.title-sign-bg{
+    width: auto;
+    height:20px;
+    float: left;
+    padding:10px 15px;
+    background:linear-gradient(90deg, #CEB8D7 0%, #F5BDC1 100%) no-repeat;
+    border-radius: 50px;
+}
+.title-sign-bg > .circle{
+    width:14px;
+    height: 14px;
+    float:left;
+    border-radius:50px;
+    background-color:#fff;
+    margin:3px 10px 3px 0px;
+}
+.title-sign-bg > .text{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    float: left;
+    color: #FFF;
+}
+.main-text{
+    width: 100%;
+    height: auto;
+    float: left;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+}
+.main-slogon{
+    width: 100%;
+    height: auto;
+    float: right;
+    font-family: 'PostNoBillsJaffnaExtraBold';
+    font-weight: 800;
+    font-size: 250px;
+    letter-spacing: 0.01em;
+    -webkit-text-stroke: 1px #999;
+    text-stroke: 1px #999;
+    color: transparent;
+    line-height: 210px;
+    overflow: hidden;
+    text-align: right;
+    
+}
+.main-slogon.gray{
+    -webkit-text-stroke: 1px #666;
+    text-stroke: 1px #666;
+    
+}
+.main-pic{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -100px;
+}
+
+
+    /*項目*/
+.main-item-block{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -100px;
+}
+.main-item{
+    width:95%;
+    height: auto;
+    float: right;
+}
+.main-item>a{
+    width:48%;
+    height: 115px;
+    float: left;
+    margin-bottom:2%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.main-item>a:nth-child(odd){
+    margin-right:2%;
+}
+.main-item>a:nth-child(1){
+    background-image:url("../img/index_item_01.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(1):hover{
+    background-image:url("../img/index_item_01_hover.png"); 
+}
+.main-item>a:nth-child(2){
+    background-image:url("../img/index_item_02.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(2):hover{
+    background-image:url("../img/index_item_02_hover.png"); 
+}
+.main-item>a:nth-child(3){
+    background-image:url("../img/index_item_03.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(3):hover{
+    background-image:url("../img/index_item_03_hover.png"); 
+}
+.main-item>a:nth-child(4){
+    background-image:url("../img/index_item_04.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(4):hover{
+    background-image:url("../img/index_item_04_hover.png"); 
+}
+.main-item>a:nth-child(5){
+    background-image:url("../img/index_item_05.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(5):hover{
+    background-image:url("../img/index_item_05_hover.png"); 
+}
+.main-item>a:nth-child(6){
+    background-image:url("../img/index_item_06.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-item>a:nth-child(6):hover{
+    background-image:url("../img/index_item_06_hover.png"); 
+}
+
+
+     /*外泌體*/
+.main-exo-bg{
+    background-image:url("../img/index_exosome_bg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main-exo-block{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -100px;
+}
+.main-exo-block>.woman{
+    width: 70%;
+    float:right;
+    margin-top: -50px;
+}
+.main-exo-block>.set{
+    width: 496px;
+    position:absolute;
+    margin-top:210px;
+    margin-left:-180px;
+
+}
+
+    /*證照*/
+.main-pic.cert{
+    width:720px;
+    height: 431px;
+    overflow:hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.cert-list{
+    left: 0px;
+    display:flex;
+    position: absolute;
+}
+.cert-pic{
+    width:223px;
+    height: 431px;
+    margin-right:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+    /*回饋*/
+.main-feedback-block{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: -200px;
+}
+.main-feedback-block>.woman{
+    width: 70%;
+    float:right;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+.main-feedback-block>.phone{
+    width: 672px;
+    height: 406px;
+    position:absolute;
+    margin-top:205px;
+    margin-left:-180px;
+    background-image:url('../img/index_feedback_phone.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.main-feedback-case-block{
+    width: 543px;
+    height: 246px;
+    display:block;
+    margin: 160px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.main-feedback-block>.phone .case{
+    width: 100%;
+    height: auto;
+    float:left;
+    margin-bottom:20px;
+    animation: verticalScroll 25s infinite linear; /* 設定動畫名稱、時長、重複次數、速度曲線 */
+}
+
+@keyframes verticalScroll {
+      0% {
+        transform: translateY(0); /* 起始位置 */
+      }
+      100% {
+        transform: translateY(-1000%); /* 結束位置，移動到內容的頂部 */
+      }
+    }
+
+    /*血庫*/
+.main-bloodbanks-map{
+    width:135%;
+    height: auto;
+    float: right;
+    margin-top:-20px;
+}
+
+
+
+

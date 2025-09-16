@@ -1,0 +1,24 @@
+/* about-us.css 檔案內容 */
+
+/*關於我們 banner*/
+.sub-banner{
+    padding-top:100px;
+}
+
+
+/*關於我們 願景*/
+.about-us-vision-bg{
+    height: auto;
+    background-image:url("../img/about_us_vision_bg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main-slogon.white{
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    
+}
+.main-text.white{
+    color:white;
+    margin-bottom:100px;
+}

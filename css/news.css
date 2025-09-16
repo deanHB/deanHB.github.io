@@ -1,0 +1,110 @@
+/* about-us.css 檔案內容 */
+
+/*news banner*/
+.sub-banner{
+    padding-top:100px;
+}
+
+/*分籤按鈕*/
+.tittle-sigh-block.sign-btn{
+    margin:80px 0px
+
+}
+.title-sign-bg.sign-btn{
+    cursor: pointer;
+    background:url(../img/more_btn_bg.png) no-repeat;
+    background-size:cover;
+    transition:all 0.3s;;
+    margin-right:20px;
+}
+.title-sign-bg.sign-btn:hover{
+    cursor: pointer;
+    background:url(../img/more_btn_hover_bg.png) no-repeat;
+    background-size:cover;
+}
+.title-sign-bg.sign-btn:nth-last-child(1){
+    margin-right:0px;
+}
+.title-sign-bg > .circle{
+    width:14px;
+    height: 14px;
+    float:left;
+    border-radius:50px;
+    background-color:#fff;
+    margin:3px 10px 3px 0px;
+}
+.title-sign-bg > .text{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    float: left;
+    color: #FFF;
+}
+
+
+/*news-main*/
+.news-block{
+    width:calc(25% - 41px);
+    height:295px;
+    padding:13px;
+    border-radius:10px;
+    background:url(../img/news-bg.png) no-repeat;
+    background-size:cover;
+    margin-right:20px;
+    color:#666;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.news-block:hover{
+    background:url(../img/news-bg-hover.png) no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+.news-block:nth-last-child(1){
+    margin-right:0px;
+}
+.news-block>.sub_banner{
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+    float:left;
+}
+.news-block>.kind-sign{
+    width:100%;
+    height:auto;
+    margin-bottom:3px;
+    float:left;
+    font-size:12px;
+}
+.news-block>.title{
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+    float:left;
+    font-size:18px;
+}
+.news-block>.info{
+    width:100%;
+    height:auto;
+    margin-bottom:20px;
+    float:left;
+    font-size:12px;
+    letter-spacing:0.1em;;
+}
+.news-block>.date{
+    width:100%;
+    height:auto;
+    font-size:12px;
+    letter-spacing:0.1em;
+    text-align:right;
+}
+
+.news-block>.yt-video{
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+    float:left;
+}
