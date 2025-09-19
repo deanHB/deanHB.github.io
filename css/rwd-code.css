@@ -1,0 +1,77 @@
+/* RWD.css 檔案內容 */
+
+/*RWD*/
+/* 手機樣式 */
+@media (max-width: 767px) {
+
+    body{font-size:16px;}
+    .main-text{line-height:1.2em;}
+
+    /*index*/
+    .block{width:95%;}
+    .text-block{width:100%;}  
+    .title-sign-bg{width:90%;}
+    .main-slogon{font-size:150px;}
+    .pic-block{width:100%;}
+    .main-item{width:100%;}
+    .main-item>a{width:100%;height:auto;padding:5.22em 0;margin-bottom:2%;}
+    .main-item>a:nth-child(odd){margin-right:0px;}
+    .main-exo-block>.set{width:100%;margin:-10px 0px 0 0;position:relative;}
+    .main-exo-block>.woman{display:none;}
+    .main-feedback-block>.woman{display:none;}
+    .main-feedback-case-block{width:90%;height:85px;margin:115px auto 0 auto;}
+    .main-feedback-block>.phone{width:95%;position:absolute;margin-left:0px;height: 200px;margin-top:-50px;}
+    .main-feedback-block{margin-top:0px;}
+    .header-menu{display:none;}
+    .main-bloodbanks-map{width:100%;}
+    .footer-copy-right{font-size:16px;line-height:20px;padding:10px 0;}
+    .line-out{z-index:999;}
+    .block.main-block-set{padding:0 0;}
+    .mobile-block{margin-top:200px !important;}
+    .banner{margin-top:100px;}
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{margin-top:5px;}
+
+        /*about us*/
+    .about-us-vision-bg{padding:30px 0;}
+
+
+    /*media*/
+    .title-sign-bg.sign-btn{width:calc(50% - 40px);margin-bottom:20px;}
+    .news-block{width:calc(100% - 41px);}
+    .tittle-sigh-block.sign-btn{margin:40px 0;}
+
+    /*exo-product*/
+    .main-exo-block>.product_cream{width:150px;margin-top:-200px;margin-left:200px;}
+    .main-exo-block>.product_serum{width:150px;margin-top:100px;margin-left:200px;}
+    .main-exo-block>.product_hair{width:150px;margin-top:130px;margin-left:200px;}
+    .more_btn{width:25%;height:20px;float:left;line-height:20px;margin-bottom:40px;}
+
+    /*contact-us*/
+    .company-info-logo-block{width:100%;margin-bottom:30px;}
+    .company-info-main-block{width:100%;}
+
+    /*header*/
+    .header-out > div{padding:0 5%;width:90%;}
+    .header-mobile-block{display:block;}
+
+}
+
+
+/* 平板直立樣式 */
+@media (min-width: 768px) and (max-width: 1023px) {
+        .block{
+            width:90%;
+        }
+}
+
+/* 平板橫向、筆電樣式 */
+@media (min-width: 1024px) and (max-width: 1199.99px) {
+        .block{
+            width:80%;
+        }
+}
+
+/* 桌機樣式 */
+@media (min-width: 1200px) {
+ 
+}

@@ -45,10 +45,11 @@
 /*news-main*/
 .news-block{
     width:calc(25% - 41px);
-    height:295px;
+    height:auto;
     padding:13px;
     border-radius:10px;
-    background:url(../img/news-bg.png) no-repeat;
+    background:white;
+    border:1px solid #F4BDC1;
     background-size:cover;
     margin-right:20px;
     color:#666;
