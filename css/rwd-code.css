@@ -53,7 +53,9 @@
     /*header*/
     .header-out > div{padding:0 5%;width:90%;}
     .header-mobile-block{display:block;}
-
+    .header-mobile-drop-block{width:100%;height:auto;display:none;}
+    .header-mobile-drop-block>a{width:100%;height: auto;float:right;font-size:25px;line-height:70px;text-align:right;}
+    .header-mobile-drop-block>a:nth-child(1){margin-top:40px;}
 }
 
 

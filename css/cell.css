@@ -165,3 +165,7 @@
     line-height:30px;
     margin-bottom:40px;
 }
+
+.main-text>.disease-block>.text>span{
+    font-size:12px;
+}

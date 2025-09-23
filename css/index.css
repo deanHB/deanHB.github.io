@@ -23,8 +23,6 @@
 }
 
 
-
-
 /*Banner*/
 .banner{
     width: 100%;
@@ -112,7 +110,7 @@
 }
 .main-slogon.gray{
     -webkit-text-stroke: 1px #666;
-    text-stroke: 1px #666;
+    text-stroke:1px solid #666;
     
 }
 .main-pic{
@@ -144,6 +142,8 @@
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    border-radius: 15px;
+    border: 1px solid #F4BDC1;
 }
 .main-item>a:nth-child(odd){
     margin-right:2%;
