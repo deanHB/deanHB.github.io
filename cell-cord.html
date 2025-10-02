@@ -58,10 +58,9 @@
                         <a href="about-us.html" >關於我們</a>
                     </div>
 
-                     <div class="header-mobile-block" id="mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                      <div class="header-mobile-block">
+                        <img src="img/header_menu_mobile.png" alt="" id="header-menu">
+                        <img src="img/header_menu_mobile_close.png" alt="" id="header-close">
                     </div>
                     <div class="header-mobile-drop-block" id="mobile-drop">
                         <a href="about-us.html">關於我們</a>
@@ -71,11 +70,20 @@
                         <a href="news.html">最新消息</a>
                         <a href="contact-us.html">聯絡我們</a>
                     </div>
+
                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script>
                 $(function(){
-                $("#mobile-menu").click(function() {
-                    $("#mobile-drop").slideToggle();
+                $("#header-menu").click(function() {
+                    $("#mobile-drop").slideDown();
+                    $("#header-close").show();
+                    $("#header-menu").hide();
+                });
+
+                $("#header-close").click(function() {
+                    $("#mobile-drop").slideUp();
+                    $("#header-close").hide();
+                    $("#header-menu").show();
                 });
 
                 
@@ -175,7 +183,8 @@
                     </div>
                     <div class="main-text">
                         生之寶所有臍帶血與臍帶組織保存流程，
-                        <br>皆於通過 GTP 與 AABB 國際認證的工廠中進行。
+                        <br>皆通過TFDA認可的專業細胞保存庫、
+                        <br>並通過GTP實地訪查合格及AABB雙認證的實驗室進行。
                         <br><br>我們嚴格執行品質管理，
                         <br>並導入專利低溫液態氮槽的冷凍技術，
                         <br>恆定 -196°C 液態氮環境，

@@ -62,10 +62,9 @@
                         <a href="about-us.html" class="active">關於我們</a>
                     </div>
 
-                     <div class="header-mobile-block" id="mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                      <div class="header-mobile-block">
+                        <img src="img/header_menu_mobile.png" alt="" id="header-menu">
+                        <img src="img/header_menu_mobile_close.png" alt="" id="header-close">
                     </div>
                     <div class="header-mobile-drop-block" id="mobile-drop">
                         <a href="about-us.html">關於我們</a>
@@ -75,11 +74,20 @@
                         <a href="news.html">最新消息</a>
                         <a href="contact-us.html">聯絡我們</a>
                     </div>
+
                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script>
                 $(function(){
-                $("#mobile-menu").click(function() {
-                    $("#mobile-drop").slideToggle();
+                $("#header-menu").click(function() {
+                    $("#mobile-drop").slideDown();
+                    $("#header-close").show();
+                    $("#header-menu").hide();
+                });
+
+                $("#header-close").click(function() {
+                    $("#mobile-drop").slideUp();
+                    $("#header-close").hide();
+                    $("#header-menu").show();
                 });
 
                 
@@ -144,13 +152,14 @@
                         </div>
                     </div>
                     <div class="main-text white">
-                        生之寶期望透過不斷的研究與創新，
+                        生之寶"團隊"深耕於生命科學與再生醫學已經超過 20 年，
+                        <br>我們期望透過不斷的研究與創新，
                         <br>將再生醫學的潛力延伸到更多臨床與日常應用。
                         <br><br>外泌體的發展為醫學與保養帶來新契機，
                         <br>而我們的願景，
                         <br>是讓這些科研成果成為人人可及的健康選擇。
                         <br><br>打造再生醫學的應用平台，
-                        <br>並推動科研走進人們平日生活，
+                        <br>並推動科研走進你我的生活中，
                         <br>生之寶成為亞洲領先的再生醫療的科學品牌。
                     </div>
                 </div>

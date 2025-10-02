@@ -16,11 +16,11 @@
   <body>
     <div class="out">  <!--100%外層-->
 
-         <!--Popup--
+         <!--Popup-->
         <div id="popup" class="popup-block">
-            <div style="width:100%;height:40vh;position:absolute;top:0px;background-color:black;"></div>
+            <div style="width:100%;height:45vh;position:absolute;top:0px;background-color:black;"></div>
             <iframe id="video" src="https://player.vimeo.com/video/1119290345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="100vw" height="100vh" frameborder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"title="popup"></iframe>
-            <div style="width:100%;height:40vh;position:absolute;bottom:0px;background-color:black;"></div>
+            <div style="width:100%;height:45vh;position:absolute;bottom:0px;background-color:black;"></div>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
@@ -40,7 +40,7 @@
         popup.style.display = 'none';
         }, 500);
         });
-        </script-->
+        </script>
         
 
         <div class="out">  <!--Header100%外層-->
@@ -56,6 +56,7 @@
             <div class="header-out">  <!--Header-->
                 <div>
                     <a class="header-logo" href="index.html"> <img src="img/logo.png" alt=""></a>
+                    
                     <div class="header-menu">
                         <a href="contact-us.html">聯絡我們</a>
                     </div>
@@ -84,10 +85,9 @@
                         <a href="about-us.html">關於我們</a>
                     </div>
 
-                    <div class="header-mobile-block" id="mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="header-mobile-block">
+                        <img src="img/header_menu_mobile.png" alt="" id="header-menu">
+                        <img src="img/header_menu_mobile_close.png" alt="" id="header-close">
                     </div>
                     <div class="header-mobile-drop-block" id="mobile-drop">
                         <a href="about-us.html">關於我們</a>
@@ -96,12 +96,25 @@
                         <a href="media.html">影音專區</a>
                         <a href="news.html">最新消息</a>
                         <a href="contact-us.html">聯絡我們</a>
+                        <div class="">
+                            <a href="javascript:void(0);">CN</a>
+                            <a href="javascript:void(0);">EN</a>
+                        </div>
                     </div>
+
                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script>
                 $(function(){
-                $("#mobile-menu").click(function() {
-                    $("#mobile-drop").slideToggle();
+                $("#header-menu").click(function() {
+                    $("#mobile-drop").slideDown();
+                    $("#header-close").show();
+                    $("#header-menu").hide();
+                });
+
+                $("#header-close").click(function() {
+                    $("#mobile-drop").slideUp();
+                    $("#header-close").hide();
+                    $("#header-menu").show();
                 });
 
                 
@@ -122,17 +135,34 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="banner">
-                                <a href=""><img src="img/index_banner.png" alt=""></a>
+                                <a href="">
+                                    <img class="pc-banner" src="img/index_banner_01.png" alt="">
+                                    <img class="mobile-banner" src="img/index_mobile_banner_01.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner">
-                                <a href=""><img src="img/index_banner.png" alt=""></a>
+                                <a href="">
+                                    <img class="pc-banner" src="img/index_banner_02.png" alt="">
+                                    <img class="mobile-banner" src="img/index_mobile_banner_02.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner">
-                                <a href=""><img src="img/index_banner.png" alt=""></a>
+                                <a href="">
+                                    <img class="pc-banner" src="img/index_banner_03.png" alt="">
+                                    <img class="mobile-banner" src="img/index_mobile_banner_03.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner">
+                                <a href="">
+                                    <img class="pc-banner" src="img/index_banner_04.png" alt="">
+                                    <img class="mobile-banner" src="img/index_mobile_banner_04.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +201,7 @@
                         </div>
                     </div>
                     <div class="main-text">
-                        生之寶深耕於生命科學與再生醫學已經超過 20 年。
+                        生之寶"團隊"深耕於生命科學與再生醫學已經超過 20 年。
                         <br><br>從臍帶&臍帶血儲存開始，
                         <br>我們奠定了對於幹細胞的多項專業技術，
                         <br>並不斷在研發與應用上持續突破，造福人群。
@@ -222,12 +252,54 @@
                     </div>
                     <div class="main-item-block">
                         <div class="main-item">
-                            <a href="cell-cord.html"></a>
-                            <a href="cell-adsc.html"></a>
-                            <a href="cell-nk-cell.html"></a>
-                            <a href="cell-peripheral-blood.html"></a>
-                            <a href="exo-info.html"></a>
-                            <a href="about-us.html"></a> 
+                            <a href="cell-cord.html">
+                                <div class="main-item-pic"><img src="img/index_item_01_pic.png" alt=""></div>
+                                <div class="main-item-text">
+                                    <div class="title">臍帶血/臍帶儲存</div>
+                                    <div class="subtitle">新生命開始的 第一份禮物</div>
+                                    <div class="text">安全保存造血幹細胞<br>為未來健康留下一份保障</div>
+                                </div>
+                            </a>
+                            <a href="cell-adsc.html">
+                                <div class="main-item-pic"><img src="img/index_item_02_pic.png" alt=""></div>
+                                <div class="main-item-text">
+                                    <div class="title">自體脂肪</div>
+                                    <div class="subtitle">自身未來健康的種源培養</div>
+                                    <div class="text">自體細胞培養<br>為健康多一份保障</div>
+                                </div>
+                            </a>
+                            <a href="cell-nk-cell.html">
+                                <div class="main-item-pic"><img src="img/index_item_03_pic.png" alt=""></div>
+                                <div class="main-item-text">
+                                    <div class="title">NK細胞儲存應用</div>
+                                    <div class="subtitle">增強免疫防護 鎖住健康能量</div>
+                                    <div class="text">調節免疫功能<br>未來精準醫療應用</div>
+                                </div>
+                            </a>
+                            <a href="cell-peripheral-blood.html">
+                                <div class="main-item-pic"><img src="img/index_item_04_pic.png" alt=""></div>
+                                <div class="main-item-text">
+                                    <div class="title">周邊血儲存應用</div>
+                                    <div class="subtitle">多元細胞來源 開啟醫療新契機</div>
+                                    <div class="text">富含多種細胞來源<br>高品質認證專利儲存技術</div>
+                                </div>
+                            </a>
+                            <a href="exo-info.html">
+                                <div class="main-item-pic"><img src="img/index_item_05_pic.png" alt=""></div>
+                                <div class="main-item-text">
+                                    <div class="title">外泌體療程</div>
+                                    <div class="subtitle">諾貝爾細胞 保養新科研</div>
+                                    <div class="text">應用科研成果<br>延伸至預防醫學</div>
+                                </div>
+                            </a>
+                            <a href="about-us.html">
+                                <div class="main-item-pic"><img src="img/index_item_06_pic.png" alt=""></div>
+                                <div class="main-item-text">
+                                    <div class="title">GTP認證實驗室</div>
+                                    <div class="subtitle">認證專業製程 品質安心保證</div>
+                                    <div class="text">私人與公益雙軌儲存<br>高規格實驗室與臨床配對經驗</div>
+                                </div>
+                            </a> 
                         </div>
                     </div>
                 </div>
@@ -304,12 +376,10 @@
                     <div class="main-pic cert">
                         <div class="cert-list">
                             <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
-                            <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
-                            <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
-                            <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
-                            <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
-                            <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
-                            <div class="cert-pic"><img src="img/index_GTP_cert.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_AABB.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_nmdp.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_cord_save.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_cell_save.png" alt=""></div>
                         </div> 
                     </div>
                 </div>
@@ -323,12 +393,12 @@
                     <div class="tittle-sigh-block">
                         <div class="title-sign-bg">
                             <div class="circle"></div>
-                            <div class="text">臨床實證&nbsp;CASE</div>
+                            <div class="text">臨床實證&nbsp;CLINICAL</div>
                         </div>
                     </div>
                     <div class="main-text">
                         生之寶團隊協助非常多重症案例，
-                        <br>聯絡最強技術的醫療團隊，
+                        <br>聯手最強技術的醫療團隊，
                         <br>配合我們生之寶最高規格的細胞原物料。
                         <br>讓許多已經被放棄治療的生命
                         <br>都有可痊癒的一線生機，
@@ -337,7 +407,7 @@
                 </div>
                 <div class="pic-block">
                     <div class="main-slogon">
-                        CASE
+                        CLINICAL
                     </div>
                     <div class="main-feedback-block">
                         <div class="woman">
@@ -345,16 +415,16 @@
                         </div>
                         <div class="phone">
                             <div class="main-feedback-case-block">
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_cas_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
+                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
                             </div>
                         </div>
                     </div>

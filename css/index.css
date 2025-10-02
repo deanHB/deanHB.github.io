@@ -38,6 +38,12 @@
 :root{
     --swiper-theme-color:#F6BDC0!important;
 }
+.pc-banner{
+    display:block;
+}
+.mobile-banner{
+    display:none;
+}
 
 /*區塊內文*/
 .gray-bg{
@@ -90,7 +96,6 @@
     height: auto;
     float: left;
     line-height: 1.8em;
-    letter-spacing: 0.05em;
 }
 .main-slogon{
     width: 100%;
@@ -134,9 +139,10 @@
     float: right;
 }
 .main-item>a{
-    width:48%;
-    height: 115px;
+    width:calc(48% - 20px);
+    height: 95px;
     float: left;
+    padding:10px;
     margin-bottom:2%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -144,58 +150,76 @@
     transition: all 0.3s;
     border-radius: 15px;
     border: 1px solid #F4BDC1;
+    background-color:white;
+}
+.main-item>a:hover{
+    background: linear-gradient(180deg, #CFB9D7 0%, #F4BDC1 100%);
+}
+.main-item>a:hover>.main-item-text>.title{
+   color:white;
+}
+.main-item>a:hover>.main-item-text>.subtitle{
+   color:white;
+}
+.main-item>a:hover>.main-item-text>.text{
+   color:white;
 }
 .main-item>a:nth-child(odd){
     margin-right:2%;
 }
-.main-item>a:nth-child(1){
-    background-image:url("../img/index_item_01.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+.main-item-pic{
+    width:calc(34% - 10px);
+    height:auto;
+    float:left;
 }
-.main-item>a:nth-child(1):hover{
-    background-image:url("../img/index_item_01_hover.png"); 
+.main-item-text{
+    width:calc(66% - 10px);
+    height:auto;
+    float:left;
+    margin-left:20px;
+
 }
-.main-item>a:nth-child(2){
-    background-image:url("../img/index_item_02.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
+.main-item-text>.title{
+    width:100%;
+    height: auto;
+    float:left;
+    font-size:18px;
+    margin-bottom:5px;
+    color:#333;
+    font-weight:bolder;
 }
-.main-item>a:nth-child(2):hover{
-    background-image:url("../img/index_item_02_hover.png"); 
+.main-item-text>.subtitle{
+    width:100%;
+    height:auto;
+    float:left;
+    font-size:12px;
+    color:#666666;
+    margin-bottom:10px;
 }
-.main-item>a:nth-child(3){
-    background-image:url("../img/index_item_03.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
+.main-item-text>.text{
+    width:100%;
+    height:auto;
+    float:left;
+    font-size:12px;
+    color:#999999;
 }
-.main-item>a:nth-child(3):hover{
-    background-image:url("../img/index_item_03_hover.png"); 
-}
-.main-item>a:nth-child(4){
-    background-image:url("../img/index_item_04.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-item>a:nth-child(4):hover{
-    background-image:url("../img/index_item_04_hover.png"); 
-}
-.main-item>a:nth-child(5){
-    background-image:url("../img/index_item_05.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-item>a:nth-child(5):hover{
-    background-image:url("../img/index_item_05_hover.png"); 
-}
-.main-item>a:nth-child(6){
-    background-image:url("../img/index_item_06.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-item>a:nth-child(6):hover{
-    background-image:url("../img/index_item_06_hover.png"); 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
      /*外泌體*/
@@ -268,7 +292,7 @@
     width: 672px;
     height: 406px;
     position:absolute;
-    margin-top:205px;
+    margin-top:215px;
     margin-left:-180px;
     background-image:url('../img/index_feedback_phone.png');
     background-repeat:no-repeat;

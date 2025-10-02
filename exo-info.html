@@ -62,10 +62,9 @@
                         <a href="about-us.html" >關於我們</a>
                     </div>
 
-                     <div class="header-mobile-block" id="mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                     <div class="header-mobile-block">
+                        <img src="img/header_menu_mobile.png" alt="" id="header-menu">
+                        <img src="img/header_menu_mobile_close.png" alt="" id="header-close">
                     </div>
                     <div class="header-mobile-drop-block" id="mobile-drop">
                         <a href="about-us.html">關於我們</a>
@@ -75,11 +74,20 @@
                         <a href="news.html">最新消息</a>
                         <a href="contact-us.html">聯絡我們</a>
                     </div>
+
                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script>
                 $(function(){
-                $("#mobile-menu").click(function() {
-                    $("#mobile-drop").slideToggle();
+                $("#header-menu").click(function() {
+                    $("#mobile-drop").slideDown();
+                    $("#header-close").show();
+                    $("#header-menu").hide();
+                });
+
+                $("#header-close").click(function() {
+                    $("#mobile-drop").slideUp();
+                    $("#header-close").hide();
+                    $("#header-menu").show();
                 });
 
                 
@@ -113,7 +121,7 @@
                         <br>(比如玻尿酸填充、肉毒注射等)，
                         <br>多在處理表層問題，
                         <br>對肌膚的延緩衰老並無幫助。
-                        <br><br>外泌體透過生長因子、RNA、
+                        <br><br>外泌體透過生長因子、microRNA、
                         <br>蛋白質等活性分子傳遞信息，
                         <br>從細胞層級啟動自我修復與再生，
                         <br>促進膠原蛋白、彈力蛋白生成，

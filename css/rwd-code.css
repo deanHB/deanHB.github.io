@@ -4,20 +4,33 @@
 /* 手機樣式 */
 @media (max-width: 767px) {
 
-    body{font-size:16px;}
-    .main-text{line-height:1.2em;}
+    body{font-size:18px;}
+    .main-text{line-height:1.8em;}
+
+    /*Banner*/
+    .pc-banner{display:none;}
+    .mobile-banner{display:block;}
 
     /*index*/
     .block{width:95%;}
     .text-block{width:100%;}  
-    .title-sign-bg{width:90%;}
+    .title-sign-bg{width:auto;}
     .main-slogon{font-size:150px;}
     .pic-block{width:100%;}
     .main-item{width:100%;}
-    .main-item>a{width:100%;height:auto;padding:5.22em 0;margin-bottom:2%;}
+    .main-item>a{width:calc(100% - 20px);height:auto;margin-bottom:2%;}
     .main-item>a:nth-child(odd){margin-right:0px;}
-    .main-exo-block>.set{width:100%;margin:-10px 0px 0 0;position:relative;}
-    .main-exo-block>.woman{display:none;}
+    .main-item-text>.title{font-size:25px;}
+    .main-item-text>.subtitle{font-size:20px;}
+    .main-item-text>.text{font-size:16px;}
+
+
+
+    .main-exo-bg{padding:40px 0;background:url(../img/index_exosome_bg_mobile.png);background-size: cover;background-repeat:no-repeat;}
+    .main-exo-block>.set{width:70%;height:auto;float:left;}
+    .main-exo-block>.set>img{margin-top:-120px;margin-right:-100px;}
+    .main-exo-block>.woman{float:right;}
+    .main-exo-block>.woman>img{margin-left:-30px;margin-bottom:-40px;}
     .main-feedback-block>.woman{display:none;}
     .main-feedback-case-block{width:90%;height:85px;margin:115px auto 0 auto;}
     .main-feedback-block>.phone{width:95%;position:absolute;margin-left:0px;height: 200px;margin-top:-50px;}
@@ -53,9 +66,13 @@
     /*header*/
     .header-out > div{padding:0 5%;width:90%;}
     .header-mobile-block{display:block;}
-    .header-mobile-drop-block{width:100%;height:auto;display:none;}
-    .header-mobile-drop-block>a{width:100%;height: auto;float:right;font-size:25px;line-height:70px;text-align:right;}
+    .header-mobile-drop-block{width:100%;height:50%;float:right;display:none;}
+    .header-mobile-drop-block>a{width:100%;height:auto;float:right;font-size:20px;line-height:50px;text-align:right;}
     .header-mobile-drop-block>a:nth-child(1){margin-top:40px;}
+
+    /*footer*/
+    .footer-social-main{width:238px;}
+    
 }
 
 
@@ -64,6 +81,9 @@
         .block{
             width:90%;
         }
+
+        /*index*/
+        .main-feedback-block>.phone{margin-top:0px;}
 }
 
 /* 平板橫向、筆電樣式 */

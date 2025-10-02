@@ -59,10 +59,9 @@
                         <a href="about-us.html" >關於我們</a>
                     </div>
         
-                     <div class="header-mobile-block" id="mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                     <div class="header-mobile-block">
+                        <img src="img/header_menu_mobile.png" alt="" id="header-menu">
+                        <img src="img/header_menu_mobile_close.png" alt="" id="header-close">
                     </div>
                     <div class="header-mobile-drop-block" id="mobile-drop">
                         <a href="about-us.html">關於我們</a>
@@ -72,11 +71,20 @@
                         <a href="news.html">最新消息</a>
                         <a href="contact-us.html">聯絡我們</a>
                     </div>
+
                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script>
                 $(function(){
-                $("#mobile-menu").click(function() {
-                    $("#mobile-drop").slideToggle();
+                $("#header-menu").click(function() {
+                    $("#mobile-drop").slideDown();
+                    $("#header-close").show();
+                    $("#header-menu").hide();
+                });
+
+                $("#header-close").click(function() {
+                    $("#mobile-drop").slideUp();
+                    $("#header-close").hide();
+                    $("#header-menu").show();
                 });
 
                 
@@ -216,7 +224,7 @@
                         <br>在再生醫學研究中展現出高度潛力。
                         <br><br>透過簡單手術即可取得自體脂肪，
                         <br>並經由生之寶的專業技術分離與保存，
-                        <br>確保這份「自體資源」可作為未來研究與應用的基礎。
+                        <br>確保這份「自體資源」可作為未來應用的基礎。
                         <br><br>相較於其他來源，
                         <br>自體脂肪幹細胞具有來源便利、安全、不易排斥等優勢，
                         <br>因此被視為再生醫學的重要細胞來源。
