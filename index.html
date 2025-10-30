@@ -17,19 +17,19 @@
     <div class="out">  <!--100%外層-->
 
          <!--Popup-->
-        <div id="popup" class="popup-block">
+        <div id="videoPopup" class="popup-block">
             <div style="width:100%;height:45vh;position:absolute;top:0px;background-color:black;"></div>
-            <iframe id="video" src="https://player.vimeo.com/video/1119290345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="100vw" height="100vh" frameborder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"title="popup"></iframe>
+            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1119290345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="100vw" height="100vh" frameborder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"title="popup"></iframe>
             <div style="width:100%;height:45vh;position:absolute;bottom:0px;background-color:black;"></div>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
-        var iframe = document.getElementById('video');
+        var iframe = document.getElementById('vimeoPlayer');
         var player = new Vimeo.Player(iframe);
 
         // 偵測影片結束
         player.on('ended', function() {
-        var popup = document.getElementById('popup');
+        var popup = document.getElementById('videoPopup');
 
         // 先加上過渡效果
         popup.style.transition = 'opacity 0.5s';
@@ -41,6 +41,49 @@
         }, 500);
         });
         </script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const popup = document.getElementById('videoPopup');
+        const closeBtn = document.getElementById('closeBtn');
+        const iframe = document.getElementById('vimeoPlayer');
+
+        // 建立 Vimeo 播放器物件
+        const player = new Vimeo.Player(iframe);
+
+        // 檢查是否已經看過影片
+        const hasWatched = localStorage.getItem('vimeoVideoWatched');
+
+        if (hasWatched === 'true') {
+            popup.style.display = 'none'; // 已看過 → 不顯示
+            return;
+        } else {
+            popup.style.display = 'flex'; // 第一次來 → 顯示影片
+        }
+
+        // 當影片播放結束時
+        player.on('ended', function() {
+            hidePopup();
+            localStorage.setItem('vimeoVideoWatched', 'true');
+        });
+
+        // 手動關閉按鈕
+        closeBtn.addEventListener('click', function() {
+            hidePopup();
+            localStorage.setItem('vimeoVideoWatched', 'true');
+        });
+
+        // 定義淡出函式
+        function hidePopup() {
+            popup.classList.add('hidden');
+            setTimeout(() => {
+            popup.style.display = 'none';
+            }, 500); // 等 0.5 秒淡出動畫
+        }
+        });
+    </script>
+
+        
         
 
         <div class="out">  <!--Header100%外層-->
@@ -323,7 +366,7 @@
                         <br>多在處理表層問題，
                         <br>對肌膚的抗衰老並無幫助。
                         <br><br>近年來外泌體成為全球醫學奈米級的科研新星，
-                        <br>外泌體透過生長因子、RNA、
+                        <br>外泌體透過生長因子、RNA、            
                         <br>蛋白質等活性分子傳遞信息，
                         <br>從細胞層級啟動自我修復與再生，
                         <br>促進膠原蛋白、彈力蛋白生成，
@@ -387,9 +430,8 @@
             </div>
         </div>
 
-      <!--生之寶回饋100%外層-->
-       <!--div class="out main-block-set gray-bg"  
-            <div class="block main-block-set"> 
+       <div class="out main-block-set gray-bg">  <!--生之寶回饋100%外層-->
+            <div class="block main-block-set">  <!--生之寶回饋1200內層-->
                 <div class="text-block">
                     <div class="tittle-sigh-block">
                         <div class="title-sign-bg">
@@ -432,7 +474,7 @@
                 </div>
             
             </div>
-    </div-->
+        </div>
 
         <div class="out main-block-set mobile-block">  <!--生之寶血庫100%外層-->
             <div class="block main-block-set">  <!--生之寶血庫1200內層-->
