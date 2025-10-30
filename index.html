@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/rwd-code.css">
 
-    <script src="js/marquee.js"></script>
-
   </head>
   <body>
     <div class="out">  <!--100%外層-->
@@ -459,9 +457,40 @@
                             <div class="cert-pic"><img src="img/index_cert_nmdp.png" alt=""></div>
                             <div class="cert-pic"><img src="img/index_cert_cord_save.png" alt=""></div>
                             <div class="cert-pic"><img src="img/index_cert_cell_save.png" alt=""></div>
+                        
                         </div> 
                     </div>
                 </div>
+
+                <script>
+                function load() {
+                const list = document.querySelector(".cert-list");
+                const box = document.querySelector(".main-pic.cert");
+
+                // 複製內容實現無縫滾動
+                list.innerHTML += list.innerHTML;
+
+                let left = 0;
+                const speed = 1; // 每次移動 px
+                const listWidth = Array.from(list.children).reduce((sum, li) => sum + li.offsetWidth + parseInt(getComputedStyle(li).marginRight), 0, ) / 2; // 原本列表寬度
+
+                let timer = setInterval(move, 20);
+
+                function move() {
+                    left -= speed;
+                    if (left <= -listWidth) {
+                    left = 0; // 循環回到起點
+                    }
+                    list.style.left = left + "px";
+                }
+
+                // 懸停暫停
+                box.addEventListener("mouseenter", () => clearInterval(timer));
+                box.addEventListener("mouseleave", () => timer = setInterval(move, 20));
+                }
+
+                document.addEventListener("DOMContentLoaded", load);
+                </script>
             
             </div>
         </div>
