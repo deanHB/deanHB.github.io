@@ -28,7 +28,7 @@
                 </div>
             </a>
 
-            <div class="header-out">  <!--Header-->
+            <div class="header-out"  id="topHeader">  <!--Header-->
                 <div>
                     <a class="header-logo" href="index.html"> <img src="img/logo.png" alt=""></a>
                     <div class="header-menu">
@@ -47,20 +47,51 @@
                         <a href="">投資人專區</a>
                     </div-->
                     
-                    
-                    
-
                     <div class="header-menu">
-                        <a href="exo-info.html">美容產品</a>
+                        <a href="exo-info.html" class="menuBtn">美容產品</a>
+                        <div class="header-drop-menu menuDrop">
+                            <a href="exo-product.html">保養品</a>
+                        </div> 
                     </div>
 
                     <div class="header-menu">
-                        <a href="cell-info.html">幹細胞儲存</a>
+                        <a href="cell-info.html" class="menuBtn">幹細胞儲存</a>
+                        <div class="header-drop-menu menuDrop">
+                            <a href="cell-nk-cell.html">NK免疫細胞</a>
+                            <a href="cell-adsc.html">自體脂肪</a>
+                            <a href="cell-peripheral-blood.html">成人周邊血</a>
+                            <a href="cell-cord.html">臍帶/臍帶血</a>
+                        </div> 
                     </div>
 
                     <div class="header-menu">
                         <a href="about-us.html" class="active">關於我們</a>
                     </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                    $(document).ready(function() {
+                    $('.menuBtn').mouseenter(
+                        function() { // mouseenter
+                        $('.menuDrop').slideDown();   
+                        }
+                    );
+                    $('#topHeader').mouseleave(
+                        function() { // mouseleave
+                        $('.menuDrop').slideUp();   
+                        }
+                    );
+
+
+                    });
+                    
+
+                    </script>
+
+
+
+
+
 
                       <div class="header-mobile-block">
                         <img src="img/header_menu_mobile.png" alt="" id="header-menu">
