@@ -4,6 +4,10 @@
 /* 手機樣式 */
 @media (max-width: 767px) {
 
+    #DealerPopup{
+        display:none;
+    }
+
     body{font-size:18px;}
     .main-text{line-height:1.8em;}
 
@@ -80,6 +84,9 @@
 @media (min-width: 768px) and (max-width: 1023px) {
         .block{
             width:90%;
+        }
+        #DealerPopup{
+            display:none;
         }
 
         /*index*/
