@@ -15,15 +15,48 @@
     <link rel="icon" type="image/png" size="16x16" href="img/favicon-16x16.png">
      <!--FAVICON-->
 
+
   </head>
   <body>
     <div class="out">  <!--100%外層-->
+        <!--經銷商POPUP-->
+        <div class="popup-block-dealer" id="DealerPopup">
+            <div>
+                <a href="contact-us.html" class="popup-dealer"><img src="img/popup-dealer.png" alt=""></a>
+                <img id="DealerPopupCancel"  class="popup-dealer-cancel" src="img/popup-cancel.png" alt="">
+            </div>
+        </div>
+        <!--經銷商POPUP-->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // 延遲 2 秒後顯示
+        setTimeout(function() {
+        const DealerPopup = document.getElementById("DealerPopup");
+        DealerPopup.style.display = "block"; // 先顯示
+        setTimeout(() => DealerPopup.classList.add("show"), 10); // 套用淡入效果
+        }, 1000);
 
-         <!--Popup-->
+        DealerPopupCancel.addEventListener("click", () => {
+        DealerPopup.classList.remove("show");
+        setTimeout(() => DealerPopup.style.display = "none", 800); // 等淡出動畫結束再隱藏
+        });
+
+
+
+
+        });
+        </script>
+       
+        
+
+
+
+
+         <!--VideoPopup-->
         <div id="videoPopup" class="popup-block">
-            <div style="width:100%;height:45vh;position:absolute;top:0px;background-color:black;"></div>
-            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1119290345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="100vw" height="100vh" frameborder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"title="popup"></iframe>
-            <div style="width:100%;height:45vh;position:absolute;bottom:0px;background-color:black;"></div>
+            <div style="width:100%;height:45vh;position:absolute;top:0px;background-color:black;z-index: 9999;"></div>
+            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1119290345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="100%" height="100%" frameborder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="z-index:9998;" ></iframe>
+            <div style="width:100%;height:45vh;position:absolute;bottom:0px;background-color:black;z-index: 9999;"></div>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
@@ -183,7 +216,7 @@
                         </div>
                     </div>
 
-                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>     
                 <script>
                 $(function(){
                 $("#header-menu").click(function() {
@@ -587,7 +620,7 @@
             <div class="out">
                 <div class="block ">  <!--footer1200內層-->
                     <div class="footer-cert">
-                        <img src="img/footer-cert.png" alt="">
+                        <img src="img/footer-cert.png" alt=""> 
                     </div>
                 </div>
             </div>
