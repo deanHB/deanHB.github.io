@@ -41,6 +41,11 @@
         setTimeout(() => DealerPopup.style.display = "none", 800); // 等淡出動畫結束再隱藏
         });
 
+        DealerPopup.addEventListener("click", () => {
+        DealerPopup.classList.remove("show");
+        setTimeout(() => DealerPopup.style.display = "none", 800); // 等淡出動畫結束再隱藏
+        });
+
 
 
 

@@ -1,0 +1,106 @@
+/* RWD.css 檔案內容 */
+
+/*RWD*/
+/* 手機樣式 */
+@media (max-width: 767px) {
+
+    #DealerPopup{
+        display:none;
+    }
+
+    body{font-size:18px;}
+    .main-text{line-height:1.8em;}
+
+    /*Banner*/
+    .pc-banner{display:none;}
+    .mobile-banner{display:block;}
+
+    /*index*/
+    .block{width:95%;}
+    .text-block{width:100%;}  
+    .title-sign-bg{width:auto;}
+    .main-slogon{font-size:150px;}
+    .pic-block{width:100%;}
+    .main-item{width:100%;}
+    .main-item>a{width:calc(100% - 20px);height:auto;margin-bottom:2%;}
+    .main-item>a:nth-child(odd){margin-right:0px;}
+    .main-item-text>.title{font-size:25px;}
+    .main-item-text>.subtitle{font-size:20px;}
+    .main-item-text>.text{font-size:16px;}
+
+
+
+    .main-exo-bg{padding:40px 0;background:url(../img/index_exosome_bg_mobile.png);background-size: cover;background-repeat:no-repeat;}
+    .main-exo-block>.set{width:70%;height:auto;float:left;}
+    .main-exo-block>.set>img{margin-top:-120px;margin-right:-100px;}
+    .main-exo-block>.woman{float:right;}
+    .main-exo-block>.woman>img{margin-left:-30px;margin-bottom:-40px;}
+    .main-feedback-block>.woman{display:none;}
+    .main-feedback-case-block{width:90%;height:85px;margin:115px auto 0 auto;}
+    .main-feedback-block>.phone{width:95%;position:absolute;margin-left:0px;height: 200px;margin-top:-50px;}
+    .main-feedback-block{margin-top:0px;}
+    .header-menu{display:none;}
+    .main-bloodbanks-map{width:100%;}
+    .footer-copy-right{font-size:16px;line-height:20px;padding:10px 0;}
+    .line-out{z-index:999;}
+    .block.main-block-set{padding:0 0;}
+    .mobile-block{margin-top:200px !important;}
+    .banner{margin-top:100px;}
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{margin-top:5px;}
+
+        /*about us*/
+    .about-us-vision-bg{padding:30px 0;}
+
+
+    /*media*/
+    .title-sign-bg.sign-btn{width:calc(50% - 40px);margin-bottom:20px;}
+    .news-block{width:calc(100% - 41px);}
+    .tittle-sigh-block.sign-btn{margin:40px 0;}
+
+    /*exo-product*/
+    .main-exo-block>.product_cream{width:150px;margin-top:-200px;margin-left:200px;}
+    .main-exo-block>.product_serum{width:150px;margin-top:100px;margin-left:200px;}
+    .main-exo-block>.product_hair{width:150px;margin-top:130px;margin-left:200px;}
+    .more_btn{width:25%;height:20px;float:left;line-height:20px;margin-bottom:40px;}
+
+    /*contact-us*/
+    .company-info-logo-block{width:100%;margin-bottom:30px;}
+    .company-info-main-block{width:100%;}
+
+    /*header*/
+    .header-out > div{padding:0 5%;width:90%;}
+    .header-mobile-block{display:block;}
+    .header-mobile-drop-block{width:100%;height:50%;float:right;display:none;}
+    .header-mobile-drop-block>a{width:100%;height:auto;float:right;font-size:20px;line-height:50px;text-align:right;}
+    .header-mobile-drop-block>a:nth-child(1){margin-top:40px;}
+
+    /*footer*/
+    .footer-social-main{width:238px;}
+    
+}
+
+
+/* 平板直立樣式 */
+@media (min-width: 768px) and (max-width: 1023px) {
+        .block{
+            width:90%;
+        }
+        #DealerPopup{
+            display:none;
+        }
+
+        /*index*/
+        .main-feedback-block>.phone{margin-top:0px;}
+}
+
+/* 平板橫向、筆電樣式 */
+@media (min-width: 1024px) and (max-width: 1199.99px) {
+        .block{
+            width:80%;
+        }
+}
+
+/* 桌機樣式 */
+@media (min-width: 1200px) {
+ 
+}
