@@ -23,7 +23,7 @@ body{
     letter-spacing:0.1em;
 }
 a{
-    font-size: 18px;
+    font-size: 16px;
     font-family:sans-serif;
     color: #666666;
     text-decoration: none;
@@ -116,7 +116,7 @@ img {
 }
 
 .header-out > div{
-    width:1000px;
+    width:1200px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -131,11 +131,12 @@ img {
     margin-top: 15px;
 }
 .header-menu{
-    width:auto;
+    width:100px;
     height: auto;
     float: right;
     line-height:40px;
-    padding:15px 10px;
+    padding:15px 0px;
+    text-align: center;
 }
 
 .header-menu>a:hover{
