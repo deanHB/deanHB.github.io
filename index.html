@@ -15,126 +15,18 @@
     <link rel="icon" type="image/png" size="16x16" href="img/favicon-16x16.png">
      <!--FAVICON-->
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3XV179J8JZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3XV179J8JZ');
-</script>
 
   </head>
   <body>
     <div class="out">  <!--100%外層-->
-        <!--經銷商POPUP-->
-        <!--div class="popup-block-dealer" id="DealerPopup">
-            <div>
-                <a href="contact-us.html" class="popup-dealer"><img src="img/popup-dealer.png" alt=""></a>
-                <img id="DealerPopupCancel"  class="popup-dealer-cancel" src="img/popup-cancel.png" alt="">
-            </div>
+        <div class="video-block">
+            <video autoplay muted loop playsinline>
+                <source src="video/Adobe Express - mix.mp4" type="video/mp4">
+            </video>
+            <div class="drop-arrow-icon"><img src="../img/drop-arrow-icon.png" alt=""></div>
         </div>
-        <!--經銷商POPUP-->
-        <!--script>
-        document.addEventListener("DOMContentLoaded", function() {
-        // 延遲 2 秒後顯示
-        setTimeout(function() {
-        const DealerPopup = document.getElementById("DealerPopup");
-        DealerPopup.style.display = "block"; // 先顯示
-        setTimeout(() => DealerPopup.classList.add("show"), 10); // 套用淡入效果
-        }, 1000);
-
-        DealerPopupCancel.addEventListener("click", () => {
-        DealerPopup.classList.remove("show");
-        setTimeout(() => DealerPopup.style.display = "none", 800); // 等淡出動畫結束再隱藏
-        });
-
-        DealerPopup.addEventListener("click", () => {
-        DealerPopup.classList.remove("show");
-        setTimeout(() => DealerPopup.style.display = "none", 800); // 等淡出動畫結束再隱藏
-        });
 
 
-
-
-        });
-    </script-->
-       
-        
-
-
-
-
-         <!--VideoPopup-->
-        <div id="videoPopup" class="popup-block">
-            <div style="width:100%;height:45vh;position:absolute;top:0px;background-color:black;z-index: 9999;"></div>
-            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1119290345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="100%" height="100%" frameborder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="z-index:9998;" ></iframe>
-            <div style="width:100%;height:45vh;position:absolute;bottom:0px;background-color:black;z-index: 9999;"></div>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script>
-        var iframe = document.getElementById('vimeoPlayer');
-        var player = new Vimeo.Player(iframe);
-
-        // 偵測影片結束
-        player.on('ended', function() {
-        var popup = document.getElementById('videoPopup');
-
-        // 先加上過渡效果
-        popup.style.transition = 'opacity 0.5s';
-        popup.style.opacity = '0';
-
-        // 等 0.5 秒 (動畫時間) 後再設 display:none
-        setTimeout(function() {
-        popup.style.display = 'none';
-        }, 500);
-        });
-        </script>
-
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const popup = document.getElementById('videoPopup');
-        const closeBtn = document.getElementById('closeBtn');
-        const iframe = document.getElementById('vimeoPlayer');
-
-        // 建立 Vimeo 播放器物件
-        const player = new Vimeo.Player(iframe);
-
-        // 檢查是否已經看過影片
-        const hasWatched = localStorage.getItem('vimeoVideoWatched');
-
-        if (hasWatched === 'true') {
-            popup.style.display = 'none'; // 已看過 → 不顯示
-            return;
-        } else {
-            popup.style.display = 'flex'; // 第一次來 → 顯示影片
-        }
-
-        // 當影片播放結束時
-        player.on('ended', function() {
-            hidePopup();
-            localStorage.setItem('vimeoVideoWatched', 'true');
-        });
-
-        // 手動關閉按鈕
-        closeBtn.addEventListener('click', function() {
-            hidePopup();
-            localStorage.setItem('vimeoVideoWatched', 'true');
-        });
-
-        // 定義淡出函式
-        function hidePopup() {
-            popup.classList.add('hidden');
-            setTimeout(() => {
-            popup.style.display = 'none';
-            }, 500); // 等 0.5 秒淡出動畫
-        }
-        });
-    </script>
-
-        
-        
 
         <div class="out">  <!--Header100%外層-->
         
@@ -253,71 +145,6 @@
                 </div>
             </div>
 
-            
-
-           <!-- 引入 Swiper CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-            <!-- 輪播結構 -->
-            <div class="block main-set">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="banner">
-                                <a href="">
-                                    <img class="pc-banner" src="img/index_banner_01.png" alt="">
-                                    <img class="mobile-banner" src="img/index_mobile_banner_01.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="banner">
-                                <a href="">
-                                    <img class="pc-banner" src="img/index_banner_02.png" alt="">
-                                    <img class="mobile-banner" src="img/index_mobile_banner_02.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="banner">
-                                <a href="">
-                                    <img class="pc-banner" src="img/index_banner_03.png" alt="">
-                                    <img class="mobile-banner" src="img/index_mobile_banner_03.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="banner">
-                                <a href="">
-                                    <img class="pc-banner" src="img/index_banner_04.png" alt="">
-                                    <img class="mobile-banner" src="img/index_mobile_banner_04.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!-- 如果需要分頁器、導航按鈕等，可以添加 -->
-                <div class="swiper-pagination color"></div>
-            </div>
-
-            <!-- 引入 Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script>
-                const swiper = new Swiper('.swiper', {
-                // 自動輪播
-                autoplay: {
-                delay: 5000, // 輪播間隔時間，單位毫秒
-                disableOnInteraction: false, // 關閉互動時是否停止自動輪播
-                },
-                // 其他選項...
-                loop: true, // 是否循環
-                pagination: { // 分頁器
-                el: '.swiper-pagination',
-                clickable: true,
-                },
-                });
-            </script>
-
         </div>
 
         <div class="out main-block-set">  <!--生之寶理念100%外層-->
@@ -330,7 +157,7 @@
                         </div>
                     </div>
                     <div class="main-text">
-                        生之寶"團隊"深耕於生命科學與再生醫學已經超過 20 年。
+                        生之寶"團隊"深耕於再生醫學已經超過 20 年。
                         <br><br>從臍帶&臍帶血儲存開始，
                         <br>我們奠定了對於幹細胞的多項專業技術，
                         <br>並不斷在研發與應用上持續突破，造福人群。
@@ -353,6 +180,7 @@
             
             </div>
         </div>
+        
 
          <div class="out main-block-set">  <!--生之寶項目100%外層-->
             <div class="block main-block-set">  <!--生之寶項目1200內層-->
@@ -416,7 +244,7 @@
                             <a href="exo-info.html">
                                 <div class="main-item-pic"><img src="img/index_item_05_pic.png" alt=""></div>
                                 <div class="main-item-text">
-                                    <div class="title">外囊泡療程</div>
+                                    <div class="title">外泌體科技</div>
                                     <div class="subtitle">諾貝爾細胞 保養新科研</div>
                                     <div class="text">應用科研成果<br>延伸至預防醫學</div>
                                 </div>
@@ -436,44 +264,36 @@
             </div>
         </div>
 
-        <div class="out main-exo-bg main-block-set">  <!--生之寶外囊泡100%外層-->
-            <div class="block main-block-set">  <!--生之寶外囊泡1200內層-->
+        <div class="out main-block-set sub-banner-color-bg" style="padding-bottom:0px;">  <!--生之寶cell center 100%外層-->
+            <div class=" sub-banner-bg">
+            <div class="block main-block-set">  <!--生之寶cell center 1200內層-->   
                 <div class="text-block">
                     <div class="tittle-sigh-block">
-                        <div class="title-sign-bg">
-                            <div class="circle"></div>
-                            <div class="text">外囊泡&nbsp;EXOSOME</div>
+                        <div class="title-sign-bg white">
+                            <div class="circle green"></div>
+                            <div class="text">國際優質幹細胞儲存庫&nbsp;Cell Center</div>
                         </div>
                     </div>
                     <div class="main-text">
-                        醫學美容的新寵兒，
-                        <br>傳統醫美多以物理性或化學性干預
-                        <br>(比如玻尿酸填充、肉毒注射等)，
-                        <br>多在處理表層問題，
-                        <br>對肌膚的抗衰老並無幫助。
-                        <br><br>近年來外泌體成為全球醫學奈米級的科研新星，
-                        <br>外泌體是透過生長因子、RNA、            
-                        <br>蛋白質等活性分子傳遞信息，
-                        <br>從細胞層級啟動自我修復與再生，
-                        <br>促進膠原蛋白、彈力蛋白生成，
-                        <br>從內而外改善肌底健康，
-                        <br>讓您美得更自然，更自信!
+                        生之寶國際細胞儲存庫以國際級標準打造，
+                        <br>專注於提供安全、可追溯的細胞保存服務。
+                        <br>全流程採用嚴謹的操作規範，
+                        <br>從採集、處理、分離到超低溫凍存，
+                        <br>皆由專業團隊與精密設備控管，
+                        <br>並建立專屬編碼系統，
+                        <br>確保每一份細胞樣本皆能被完整追蹤。
+                        <br>儲存庫採用多重備援機制，
+                        <br>包括獨立電力、環境監控與警示系統，
+                        <br>以確保細胞在最穩定的狀態中長期保存。
+                        <br>我們相信，細胞是生命最根本且珍貴的資源，
+                        <br>也是未來醫學與健康管理的重要基礎。
+                        <br>及早保存細胞，是為自己預留更多未來可能、
+                        <br>更多醫學進展下的選擇權。
+
+                        <br>生之寶－守護您最珍貴的未來資產。
                     </div>
                 </div>
-                <div class="pic-block">
-                    <div class="main-slogon gray">
-                        EXOSOME
-                    </div>
-                    <div class="main-exo-block">
-                        <div class="woman">
-                            <img src="img/index_exo_woman.png" alt="">
-                        </div>
-                        <div class="set">
-                            <img src="img/index_exo_set.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            
+            </div>
             </div>
         </div>
 
@@ -547,49 +367,33 @@
             </div>
         </div>
 
-       <div class="out main-block-set gray-bg" style="display:none;">  <!--生之寶回饋100%外層-->
-            <div class="block main-block-set">  <!--生之寶回饋1200內層-->
+        <div class="out main-block-set sub-banner-color-bg" style="padding-bottom:0px;">  <!--生之寶RD 100%外層-->
+            <div class=" sub-banner-bg rd">
+            <div class="block main-block-set">  <!--生之寶RD 1200內層-->   
                 <div class="text-block">
                     <div class="tittle-sigh-block">
-                        <div class="title-sign-bg">
-                            <div class="circle"></div>
-                            <div class="text">臨床實證&nbsp;CLINICAL</div>
+                        <div class="title-sign-bg white">
+                            <div class="circle green"></div>
+                            <div class="text">研究發展&nbsp;Research & Development</div>
                         </div>
                     </div>
                     <div class="main-text">
-                        生之寶團隊協助非常多重症案例，
-                        <br>聯手最強技術的醫療團隊，
-                        <br>配合我們生之寶最高規格的細胞原物料。
-                        <br>讓許多已經被放棄治療的生命
-                        <br>都有可痊癒的一線生機，
-                        <br>讓許多不可能化為可能。
+                        新藥開發是生物醫學領域中最具挑戰及希望的道路。
+                        <br>從基礎研究、臨床前評估到多階段臨床試驗，
+                        <br>每一步都需要科學驗證、跨領域合作與高階技術整合。
+                        <br>生之寶以細胞科學為核心，
+                        <br>積極投入再生醫學、細胞衍生物與生技配方的探索，
+                        <br>透過持續性的資料累積、品管建立與生物技術優化，
+                        <br>我們相信，新藥創新不僅是開發一種物質，
+                        <br>更是在尋找一種能讓未來醫學具備更多可能的方式。
+                        <br>透過國際合作、產學鏈結與嚴謹的研發流程，
+                        <br>讓台灣在全球生技版圖中擁有前瞻而堅實的定位。
+                        <br>創新，是推動醫學成長的力量；
+                        <br>研究，是照亮未來前路的光芒；
+                        <br>未來，是生之寶為您開啟的希望。
                     </div>
                 </div>
-                <div class="pic-block">
-                    <div class="main-slogon">
-                        CLINICAL
-                    </div>
-                    <div class="main-feedback-block">
-                        <div class="woman">
-                            <img src="img/index_feedback_woman.png" alt="">
-                        </div>
-                        <div class="phone">
-                            <div class="main-feedback-case-block">
-                                <div class="case"><img src="img/index_feedback_case_01.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_02.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_03.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_04.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_05.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_06.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_07.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_cas_08.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_09.png" alt=""></div>
-                                <div class="case"><img src="img/index_feedback_case_10.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
+            </div>
             </div>
         </div>
 
@@ -648,10 +452,10 @@
                     </div>
                 </div>
             </div>
-            <div class="out">
+            <div class="out footer-cr-bg">
                 <div class="block">
                     <div class="footer-copy-right">
-                        生之寶國際再生醫學科技股份有限公司 Copyright 2025© HealthBanks Regeneretive Medical Co.,Ltd.
+                        生之寶國際再生醫學科技股份有限公司 Copyright 2025© HealthBanks Regenarative Medical Co.,Ltd.
                     </div>
                 </div>
             </div>

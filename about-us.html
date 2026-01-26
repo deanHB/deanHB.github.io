@@ -152,18 +152,18 @@
                         </div>
                     </div>
                     <div class="main-text">
-                        生之寶團隊深耕於再生醫學已經超過 20 年。
-                        <br><br>從臍帶&臍帶血儲存開始，
-                        <br>我們奠定了對於幹細胞的多項專業技術，
-                        <br>並不斷在研發與應用上持續突破，造福人群。
-                        <br><br>近年來我們更延伸至外泌體、NK免疫細胞、
-                        <br>周邊血幹細胞、自體脂肪幹細胞，
-                        <br>使再生醫學以及預防醫學能夠更加落實，
-                        <br>讓最有技術的醫生能夠使用最好的幹細胞，
-                        <br>做最完美治療。
-                        <br><br>我們的品牌理念是「儲存希望、研究創新、治療實踐」。
-                        <br><br>這不僅是一句口號，
-                        <br>而是我們在每一個服務與產品中落實的核心信念。<br><br>我們相信：「儲存不是終點，而是開始」。
+                        生之寶深耕再生醫學超過 20 年，
+                        <br>秉持「儲存希望、研究創新、治療實踐」的使命，
+                        <br>致力於將生命科學轉化為能夠守護健康的實際應用。
+
+                        <br><br>從臍帶血與臍帶組織的保存，
+                        <br>到 NK 細胞、周邊血、
+                        <br>自體脂肪幹細胞與外泌體的研究，
+                        <br>我們持續推動科研成果走進生活，
+                        <br>讓每一個家庭都能安心託付、健康相伴。
+
+                        <br>我們宣導<b>現在的健康是為了預防未來的不健康。</b>
+                        <br><br>我們始終相信：「儲存不是終點，而是開始」。
                     </div>
                 </div>
                 <div class="pic-block">
@@ -178,35 +178,77 @@
             </div>
         </div>
 
-        <div class="out about-us-vision-bg main-block-set">  <!--關於我們願景100%外層-->
-            <div class="block main-block-set">  <!--關於我們願景1200內層-->
+        <div class="out main-block-set sub-banner-color-bg" style="padding-bottom:0px;">  <!--生之寶Cert 100%外層-->
+            <div class="sub-banner-cert-bg">
+            <div class="block main-block-set">  <!--生之寶Cert 1200內層-->   
                 <div class="text-block">
                     <div class="tittle-sigh-block">
-                        <div class="title-sign-bg">
-                            <div class="circle"></div>
-                            <div class="text">生之寶願景&nbsp;VISION</div>
+                        <div class="title-sign-bg white">
+                            <div class="circle green"></div>
+                            <div class="text">國際認證&nbsp;CERTIFICATION</div>
                         </div>
                     </div>
-                    <div class="main-text white">
-                        生之寶"團隊"深耕於生命科學與再生醫學已經超過 20 年，
-                        <br>我們期望透過不斷的研究與創新，
-                        <br>將再生醫學的潛力延伸到更多臨床與日常應用。
-                        <br><br>外泌體的發展為醫學與保養帶來新契機，
-                        <br>而我們的願景，
-                        <br>是讓這些科研成果成為人人可及的健康選擇。
-                        <br><br>打造再生醫學的應用平台，
-                        <br>並推動科研走進你我的生活中，
-                        <br>生之寶成為亞洲領先的再生醫療的科學品牌。
+                    <div class="main-text">
+                        生之寶都是通過AABB美國國際組織認證的實驗室，
+                        <br>產品也都是通過多重品質檢測，確保安全性與穩定性。
+                        <br><br>我們擁有 3D 無血清培養專利技術，
+                        <br>能讓每一批產品達到相同標準，確保使用者安心。
+                        <br>此外我們在配方上堅持「純淨、安全、透明」，
+                        <br>所有產品均不含酒精、人工色素與香料，
+                        <br>敏弱肌也能安心使用。
+                        <br><br>我們相信，嚴謹的科研是品質的基礎，
+                        <br>而品質則是使用者信賴的來源。
                     </div>
                 </div>
-                <div class="pic-block">
-                    <div class="main-slogon white">
-                        ViSION
+                 <div class="pic-block">
+                    <div class="main-slogon">
+                        CERTIFICATION
+                    </div>
+                    <div class="main-pic cert" style="margin-top:-130px;">
+                        <div class="cert-list">
+                            <div class="cert-pic"><img src="img/index_GTP_cert_white.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_AABB_white.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_nmdp_white.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_cord_save_white.png" alt=""></div>
+                            <div class="cert-pic"><img src="img/index_cert_cell_save_white.png" alt=""></div>
+                        
+                        </div> 
                     </div>
                 </div>
-            
+            </div>
             </div>
         </div>
+
+         <script>
+                function load() {
+                const list = document.querySelector(".cert-list");
+                const box = document.querySelector(".main-pic.cert");
+
+                // 複製內容實現無縫滾動
+                list.innerHTML += list.innerHTML;
+
+                let left = 0;
+                const speed = 1; // 每次移動 px
+                const listWidth = Array.from(list.children).reduce((sum, li) => sum + li.offsetWidth + parseInt(getComputedStyle(li).marginRight), 0, ) / 2; // 原本列表寬度
+
+                let timer = setInterval(move, 20);
+
+                function move() {
+                    left -= speed;
+                    if (left <= -listWidth) {
+                    left = 0; // 循環回到起點
+                    }
+                    list.style.left = left + "px";
+                }
+
+                // 懸停暫停
+                box.addEventListener("mouseenter", () => clearInterval(timer));
+                box.addEventListener("mouseleave", () => timer = setInterval(move, 20));
+                }
+
+                document.addEventListener("DOMContentLoaded", load);
+                </script>
+
 
         <div class="out main-block-set">  <!--關於我們優勢100%外層-->
             <div class="block main-block-set">  <!--關於我們優勢200內層-->
@@ -241,13 +283,59 @@
             </div>
         </div>
 
+        <div class="out main-block-set">  <!--關於我們未來規劃100%外層-->
+            <div class="block main-block-set">  <!--關於我們未來規劃1200內層-->
+                <div class="text-block">
+                    <div class="tittle-sigh-block">
+                        <div class="title-sign-bg">
+                            <div class="circle"></div>
+                            <div class="text">未來規劃&nbsp;Development</div>
+                        </div>
+                    </div>
+                    <div class="main-text">
+                        我們深信，細胞是生命中最珍貴的資產。
+                        <br>以科學為基礎、以品質為核心，
+                        <br>公司致力於建構具國際水準的細胞儲存平台，
+                        <br>透過嚴謹的管理制度與長期規劃，
+                        <br>為個人與家庭預留面向未來醫學發展的更多可能，
+                        <br>成為連結現在與未來的重要生醫基石。
+                        <br><br>在研究與發展方面，
+                        <br>我們持續投入生物科技與細胞相關領域，
+                        <br>專注於細胞保存技術、品質控管與應用的深化研究。
+                        <br>藉由跨領域專業團隊及國內外學研單位的交流合作，
+                        <br>不斷優化細胞處理與保存條件，
+                        <br>確保每一份細胞資源皆能在穩定、
+                        <br>安全且可追溯的環境中妥善保存。
+                        <br><br>為國際級細胞儲存庫，我們的作業流程依循國際規範，
+                        <br>涵蓋樣本接收、處理、分離至低溫保存的每一個環節，
+                        <br>並導入標準化管理與完善的監控與備援機制，
+                        <br>以高規格設施支援長期細胞儲存需求，
+                        <br>提供穩定、可靠且值得信賴的保存環境。
+                        <br><br>我們提供多元細胞類型的專業處理與長期保存服務，
+                        <br>搭配完整資料建檔、管理與諮詢說明，
+                        <br>以透明、安全與專業的方式，
+                        <br>陪伴每一位客戶做好面向未來的健康規劃。
+                    </div>
+                </div>
+                <div class="pic-block">
+                    <div class="main-slogon">
+                        DEVELOPMENT
+                    </div>
+                    <div class="main-pic">
+                        <img src="img/about-us-development-pic.png" alt="" style="margin-top:-110px;">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
 
 
         <div class="out footer">  <!--footer100%外層-->
             <div class="out">
                 <div class="block ">  <!--footer1200內層-->
                     <div class="footer-cert">
-                        <img src="img/footer-cert.png" alt="">
+                        <img src="img/footer-cert.png" alt=""> 
                     </div>
                 </div>
             </div>
@@ -261,7 +349,7 @@
                     </div>
                 </div>
             </div>
-            <div class="out">
+            <div class="out footer-cr-bg">
                 <div class="block">
                     <div class="footer-copy-right">
                         生之寶國際再生醫學科技股份有限公司 Copyright 2025© HealthBanks Regenarative Medical Co.,Ltd.
