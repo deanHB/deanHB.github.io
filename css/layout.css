@@ -25,7 +25,6 @@ body{
 a{
     font-size: 18px;
     font-family:sans-serif;
-    color: #666666;
     text-decoration: none;
     
 }
@@ -50,6 +49,7 @@ img {
 }
 .out.main-block-set{
     margin-top:60px;
+    padding-bottom:40px;
 }
 .block.main-block-set{
     padding:40px 0;
@@ -109,8 +109,7 @@ img {
     height: auto;
     position: fixed;
     top: 0px;
-    background-color: rgba(255 ,255, 255, 0.85);
-
+    background: linear-gradient(90deg, rgba(30, 131, 161, 0.9) 0%, rgba(0, 60, 79, 0.9) 100%);
     z-index:7777;
     padding:10px 0;
 }
@@ -138,9 +137,11 @@ img {
     padding:15px 0px;
     text-align: center;
 }
-
+.header-menu>a{
+    color:white
+}
 .header-menu>a:hover{
-    color: #333;
+    color: white;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -148,7 +149,7 @@ img {
     
 }
 .header-menu a.active{
-    color: #333;
+    color: white;
 }
 
 .header-drop-menu{
@@ -159,19 +160,20 @@ img {
     font-size:16px;
     line-height:36px;
     text-align:center;
+    color:white;
 }
 .header-drop-menu>a:nth-child(1){
     padding-top:10px;
 }
 .header-drop-menu>a:hover{
-    color: #333;
+    color: white;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .header-drop-menu>a.active{
-    color: #333;
+    color: white;
 }
 
 .header-menu>a:hover>.header-drop-menu{
@@ -206,7 +208,10 @@ img {
 /*Footer*/
 .footer{
     margin-top:150px;
+    background: linear-gradient(90deg, #1E83A1 0%, #003C4F 100%);
+    color:white;
 }
+
 .footer-cert{
     max-width:735px;
     height: auto;
@@ -218,7 +223,7 @@ img {
     height:auto;
     display: block;
     margin-top:20px;
-    background-color:#F8F8F8;
+    background: linear-gradient(90deg, #1E83A1 0%, #003C4F 100%);
 }
 .footer-social-main{
     width:238px;
@@ -300,8 +305,11 @@ img {
     line-height: 40px;
     text-align: center;
     letter-spacing: 0.1em;
+    
 }
-
+.footer-cr-bg{
+    background: linear-gradient(90deg, #003C4F 0%, #1E83A1 100%);
+}
 
 
 /*More Btn*/
@@ -326,11 +334,22 @@ img {
     background:url(../img/more_btn_hover_bg.png) no-repeat;
     background-size:cover;
     transition:all 0.3s;
-    color:#CA6D89;
+    color:#fff;
+    font-weight:bolder;
+
 }
 
 
 
+.drop-arrow-icon{
+    width:auto;
+    height:auto;
+    display:block;
+    margin:0 auto;
 
-
+}
+.main-slogon.white{
+    color:#fff;
+    -webkit-text-stroke:1px solid #DADADA;
+}
 

@@ -58,6 +58,7 @@
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    float:left;
 }
 .news-block:hover{
     background:url(../img/news-bg-hover.png) no-repeat;
