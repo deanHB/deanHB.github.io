@@ -160,15 +160,16 @@
     
 }
 .main-slogon.gray{
-    -webkit-text-stroke: 1px #666;
-    text-stroke:1px solid #666;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke:1px solid #fff;
+    color:rgba(0,0,0,0);
     
 }
 .main-pic{
     width: 100%;
     height: auto;
     float: right;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 
 
