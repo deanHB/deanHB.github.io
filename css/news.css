@@ -51,7 +51,7 @@
     background:white;
     border:1px solid #F4BDC1;
     background-size:cover;
-    margin-right:20px;
+    margin-right:10px;
     color:#666;
     cursor: pointer;
     -webkit-transition: all 0.3s;
@@ -146,11 +146,12 @@
     overflow: hidden;
 }
 .news-popup-text-title{
-    width:95%;
+    width:calc(100% - 40px);
     height: auto;
-    display:block;
+    float: left;
     font-size:25px;
     margin:0 auto 20px auto;
+    padding:0 20px;
 }
 
 
@@ -160,4 +161,11 @@
     display:block;
     font-size:18px;
     margin:0 auto 20px auto;
+}
+
+.news-width-block{
+    width: 100%;
+    height:auto;
+    float:left;
+    margin-bottom:10px;
 }
