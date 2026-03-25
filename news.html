@@ -143,17 +143,17 @@
         <!--消息區塊-->
         <div class="out" style="margin-top:70px;">
             <div class="block">
-
-                <!--人體保存庫審核通過
-                <div class="news-block" id="news-seminar-0925">
+                <div class="news-width-block">
+                    <!--人體保存庫審核通過-->
+                <div class="news-block" id="place-pop">
                     <div class="sub_banner">
-                        <img src="img/news/news-seminar-0925.jpg" alt="">
+                        <img src="img/news/place-01.jpg" alt="">
                     </div>
                     <div class="kind-sign">公司公告</div>
-                    <div class="title">2025年人體細胞保存庫<br>審核通過</div>
-                    <div class="date">2026/01/30</div>
+                    <div class="title">食藥署人體器官保存庫履勘<br>審核通過</div>
+                    <div class="date">2026/03/02</div>
                 </div>
-                人體保存庫審核通過-->
+                <!--人體保存庫審核通過-->
 
                 <!--INCI-->
                 <div class="news-block" id="inci-pop">
@@ -178,7 +178,7 @@
                 <!--活性-->
 
                 <!--亞健康-->
-                <div class="news-block" id="news-seminar-0925">
+                <div class="news-block" id="health-pop">
                     <div class="sub_banner">
                         <img src="img/news/news-seminar-0925.jpg" alt="">
                     </div>
@@ -187,30 +187,24 @@
                     <div class="date">2026/01/02</div>
                 </div>
                 <!--亞健康-->
-
+                </div>
 
             </div>
+
+            
 
 
             <!--POPup-->
 
-            <!--01_INCI-->
-            
-            <!--01 INCI-->
 
-            <!--02 活性報告-->
-            
-            <!--02 活性報告-->
-
-
-            <!--03 亞健康-->
-            <div class="news-popup-out" id="news-popup">
+            <!--01 亞健康-->
+            <div class="news-popup-out" id="health-popup">
                 <div class="news-popup-block">
                     <div class="news-popup-banner">
                         <img src="img/news/news-popup-banner-0925.jpg" alt="">
                     </div>
                     <div class="news-popup-text-title">
-                        2025 生之寶 亞健康說明會
+                        <b>2025 生之寶 亞健康說明會</b>
                     </div>
                     <div class="news-popup-text-main">
                         亞健康，今天不在意，明天可能變成疾病。
@@ -227,17 +221,123 @@
                 
                 <script>
                 $(function(){
-                $("#news-seminar-0925").click(function() {
-                    $("#news-popup").show();
+                $("#health-pop").click(function() {
+                    $("#health-popup").show();
+                    
                 });
 
-                $("#news-popup").click(function() {
-                    $("#news-popup").hide();
+                $("#health-popup").click(function() {
+                    $("#health-popup").hide();
                 });
                 });
                 </script>
             </div>
-            <!--03 亞健康-->
+            <!--01 亞健康-->
+
+            <!--02 活性報告-->
+            <div class="news-popup-out" id="life-popup">
+                <div class="news-popup-block">
+                    <div class="news-popup-banner">
+                        <img src="img/news/life-02.jpg" alt="">
+                    </div>
+                    <div class="news-popup-text-title">
+                       <b>生之寶 2025 年活性報告</b>
+                    </div>
+                    <div class="news-popup-text-main">
+                        <br>根據 2025 年最新活性報告顯示，
+                        <br>生之寶保存之細胞於長達 20 年低溫儲存後，
+                        <br>解凍活性仍維持 99% 以上。
+                        <br>此成果驗證其保存技術的穩定與卓越，
+                        <br>確保細胞功能完整，
+                        <br>為未來臨床應用提供高品質保障。
+                    </div>
+
+                </div>
+                
+                
+                
+                <script>
+                $(function(){
+                $("#life-pop").click(function() {
+                    $("#life-popup").show();
+                });
+
+                $("#life-popup").click(function() {
+                    $("#life-popup").hide();
+                });
+                });
+                </script>
+            </div>
+            <!--02 活性報告-->
+
+            <!--03 INCI-->
+            <div class="news-popup-out" id="inci-popup">
+                <div class="news-popup-block">
+                    <div class="news-popup-banner">
+                        <img src="img/news/INCI_02.jpg" alt="">
+                    </div>
+                    <div class="news-popup-text-title">
+                        <b>國際INCI Name人源外泌體品質合格 通過</b>
+                    </div>
+                    <div class="news-popup-text-main">
+                        本公司人源外泌體原料成功通過國際 INCI 標準品質審核，
+                        <br>從來源控管、製程純化到最終品質檢測皆達國際規範。
+                        <br>此項認證象徵產品安全性與穩定性獲國際肯定，
+                        <br>為拓展全球應用市場奠定堅實基礎。
+                    </div>
+
+                </div>
+                
+                
+                
+                <script>
+                $(function(){
+                $("#inci-pop").click(function() {
+                    $("#inci-popup").show();
+                });
+
+                $("#inci-popup").click(function() {
+                    $("#inci-popup").hide();
+                });
+                });
+                </script>
+            </div>
+            <!--03 INCI-->
+
+            <!--04 人體保存庫-->
+            <div class="news-popup-out" id="place-popup">
+                <div class="news-popup-block">
+                    <div class="news-popup-banner">
+                        <img src="img/news/place-02.jpg" alt="">
+                    </div>
+                    <div class="news-popup-text-title">
+                        <b>人體器官保存庫實地履勘 合格通過</b>
+                    </div>
+                    <div class="news-popup-text-main"> 
+                        <br>本機構通過主管機關人體器官保存庫實地履勘審查，
+                        <br>涵蓋設備、流程與品質控管等多項指標，
+                        <br>全面符合相關法規與標準。
+                        <br>此次合格不僅展現專業管理能力，
+                        <br>也代表在生物保存與再生醫療領域具備高度可靠性與安全性。
+                    </div>
+
+                </div>
+                
+                
+                
+                <script>
+                $(function(){
+                $("#place-pop").click(function() {
+                    $("#place-popup").show();
+                });
+
+                $("#place-popup").click(function() {
+                    $("#place-popup").hide();
+                });
+                });
+                </script>
+            </div>
+            <!--04 人體保存庫-->
 
            
 
