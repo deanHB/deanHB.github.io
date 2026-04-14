@@ -1,6 +1,8 @@
 /* style.css 檔案內容 */
 
-
+body{
+    overflow-x:hidden;
+}
 /*Popup*/
 .popup-block{
     width:100%;
