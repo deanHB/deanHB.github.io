@@ -11,7 +11,124 @@
     </style>
 <html>
     <body>
+        <div class="out">  <!--Header100%外層-->
+        
+            <a class="line-out" href="https://lin.ee/Xsd8egH">  <!--line@-->
+                <img src="img/line_icon_btn.png" alt="">
+                <div class="line-text-out">
+                    <div class="line-name">@生之寶客服</div>
+                    <div class="line-text">親愛且尊敬的客戶您好，<br>請點擊右方LINE圖示，<br>讓生之寶客服人員為您服務。</div>
+                </div>
+            </a>
 
+            <div class="header-out" id="topHeader">  <!--Header-->
+                <div>
+                    <a class="header-logo" href="index.html" > <img src="img/logo.png" alt=""></a>
+                    
+                    <div class="header-menu menu-item">
+                        <a href="contact-us.html" class="menuBtn">聯絡我們</a>
+                    </div>
+
+                    <div class="header-menu">
+                        <a href="news.html" >最新消息</a>
+                    </div>
+
+                    <!--div class="header-menu">
+                        <a href="media.html">影音專區</a>
+                    </div-->
+
+                    <div class="header-menu">
+                        <a href="javascript:void(0)" class="menuBtn">存戶專區</a>
+                         <div class="header-drop-menu menuDrop">
+                            <a href="http://csc.healthbanks.com.tw/" target="_blank">信託查詢</a>
+                        </div> 
+                    </div>
+                    
+                    <div class="header-menu">
+                        <a href="exo-info.html" class="menuBtn">外泌體</a>
+                    </div>
+
+                    <div class="header-menu">
+                        <a href="cell-info.html" class="menuBtn">幹細胞儲存</a>
+                        <div class="header-drop-menu menuDrop">
+                            <a href="cell-nk-cell.html">NK免疫細胞</a>
+                            <a href="cell-adsc.html">自體脂肪</a>
+                            <a href="cell-peripheral-blood.html">成人周邊血</a>
+                            <a href="cell-cord.html">臍帶/臍帶血</a>
+                        </div> 
+                    </div>
+
+                    <div class="header-menu">
+                        <a href="about-us.html">關於我們</a>
+                    </div>
+
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                $('.menuBtn').mouseenter(
+                    function() { // mouseenter
+                    $('.menuDrop').slideDown();   
+                    }
+                );
+                $('#topHeader').mouseleave(
+                    function() { // mouseleave
+                    $('.menuDrop').slideUp();   
+                    }
+                );
+
+
+                });
+                
+
+                </script>
+
+
+
+                
+                    
+
+                    <!--header Mobiel-->
+                    <div class="header-mobile-block">
+                        <img src="img/header_menu_mobile.png" alt="" id="header-menu">
+                        <img src="img/header_menu_mobile_close.png" alt="" id="header-close">
+                    </div>
+                    <div class="header-mobile-drop-block" id="mobile-drop">
+                        <a href="about-us.html">關於我們</a>
+                        <a href="cell-info.html">幹細胞儲存</a>
+                        <a href="exo-info.html">外泌體</a>
+                        <a href="media.html">影音專區</a>
+                        <a href="news.html">最新消息</a>
+                        <a href="contact-us.html">聯絡我們</a>
+                        <div class="">
+                            <a href="javascript:void(0);">CN</a>
+                            <a href="javascript:void(0);">EN</a>
+                        </div>
+                    </div>
+
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>     
+                <script>
+                $(function(){
+                $("#header-menu").click(function() {
+                    $("#mobile-drop").slideDown();
+                    $("#header-close").show();
+                    $("#header-menu").hide();
+                });
+
+                $("#header-close").click(function() {
+                    $("#mobile-drop").slideUp();
+                    $("#header-close").hide();
+                    $("#header-menu").show();
+                });
+
+                
+                });
+                </script>
+                <!--header Mobiel-->
+                    
+                </div>
+            </div>
+
+        </div>
         
     </body>
 </html>
